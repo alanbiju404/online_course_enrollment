@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Welcome to Attendance System</h2>
+    <p>Today's Date: {{ date.strftime('%Y-%m-%d') }}</p>
+    <a href="/register">Student Register</a> |
+    <a href="/login">Student Login</a> |
+    <a href="/admin">Admin Login</a>
+</body>
+</html>
